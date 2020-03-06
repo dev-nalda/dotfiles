@@ -1,0 +1,8 @@
+[user]
+	name = nalda
+	email = dev.nalda@gmail.com
+
+[core]
+	editor = vim
+	precomposeunicode = false
+	quotepath = false

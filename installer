@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+echo "🚀 Welcome to the dev.nalda/dotfiles installer!"
+echo "-------------------------------------------------"
+echo
+export DOTFILES_PATH="$HOME/.dotfiles"
+echo "👉  Cloning into: '$DOTFILES_PATH'"
+
+# git 설치 확인(만약 설치되어있지 않다면 인스톨러가 화면에 뜬다.)
+git --version
+
+git clone --depth 1 git@github.com:dev-nalda/dotfiles.git "$DOTFILES_PATH"
+
+$DOTFILES_PATH/install.sh
